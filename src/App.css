@@ -1,32 +1,95 @@
 .App {
+  background-color: #7ebbbf;
+}
+.editor-container {
+  border: 1px solid black;
+  margin: auto;
+  width: 50%;
+  height: 150px;
+  position: relative;
+
+}
+.previewer-container {
+  border: 1px solid black;
+
+  margin: auto;
+  margin-top: 4em;
+  width: 60%;
+  min-height: 250px;
+  background-color: #b3d2d8;
+  font-size: 12px;
+
+
+}
+
+.editor-header {
+  background-color: teal;
+}
+.previewer-header {
+  background-color: teal;
+}
+.camp-icon {
+  display: inline;
+  margin-left: 5px;
+}
+
+#editor {
+  /* width: 100%; */
+  height: 125px;
+  background-color: #b3d2d8;
+  display: inline-flex;
+}
+textarea {
+    width: 98.3%;
+}
+#editor:focus {
+  outline: none;
+}
+
+#preview-container {
+  border: 1px solid black;
+  margin: 5px;
+  min-height: 220px;
+  padding: 0 1em;
+}
+
+code {
+  background-color: white;
+  min-width: 2px;
+  padding-right: 2px;
+  display: inline-block;
+  padding: 1px 4px 2px 4px;
+  font-size: 12px;
+  overflow-wrap: break-word;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  border-bottom: 1px solid black;
+  text-align: center;
+  width: 95%;
+  padding-top: .5em;
+  margin: auto;
+}
+p {
+  font-size: 12px;
+}
+.header-text {
+  display: inline;
+  margin-left: 10px;
+  border: none;
+}
+td,
+th {
+  border: 2px solid black;
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+pre {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0;
 }
