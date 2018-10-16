@@ -33,8 +33,6 @@ class App extends React.Component{
 
     return (
       <div className="App">
-
-        <div style={{height: '2em'}}></div>
         <div className="editor-container">
           <header className="editor-header">
         <span className=" camp-icon fa fa-free-code-camp"></span>
@@ -99,7 +97,7 @@ And here. | Okay. | I think we get it.
         - That look like this.
 
 
-1. And there are numbererd lists too.
+1. And there are numbered lists too.
 1. Use just 1s if you want!
 1. But the list goes on...
 - Even if you use dashes or asterisks.

@@ -1,4 +1,4 @@
-.App {
+body {
   background-color: #7ebbbf;
 }
 .editor-container {
@@ -6,12 +6,11 @@
   margin: auto;
   width: 50%;
   height: 150px;
-  position: relative;
+  margin-top: 2em;
 
 }
 .previewer-container {
   border: 1px solid black;
-
   margin: auto;
   margin-top: 4em;
   width: 60%;
@@ -52,6 +51,11 @@ textarea {
   min-height: 220px;
   padding: 0 1em;
 }
+.header-text {
+  display: inline;
+  margin-left: 10px;
+  border: none;
+}
 
 code {
   background-color: white;
@@ -61,6 +65,9 @@ code {
   padding: 1px 4px 2px 4px;
   font-size: 12px;
   overflow-wrap: break-word;
+  padding-left: 5px;
+  padding-top: 5px;
+  margin: 2px auto;
 }
 h1,
 h2,
@@ -77,11 +84,7 @@ h6 {
 p {
   font-size: 12px;
 }
-.header-text {
-  display: inline;
-  margin-left: 10px;
-  border: none;
-}
+
 td,
 th {
   border: 2px solid black;
@@ -92,4 +95,23 @@ pre {
     font-family: monospace;
     white-space: pre;
     margin: 1em 0;
+}
+
+/* @media only screen and (min-width: 650px) {
+  img {
+    width: 300px;
+    height: 300px;
+  }
+} */
+@media only screen and (max-width: 500px) {
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media only screen and (min-width: 350px) {
+  img {
+    width: 200px;
+    height: 200px;
+  }
 }
