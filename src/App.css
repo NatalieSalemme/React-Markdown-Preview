@@ -97,23 +97,59 @@ pre {
     margin: 1em 0;
 }
 
-@media only screen and (min-width: 350px) {
+@media only screen and (max-width: 200px) {
   img {
     width: 200px;
     height: 200px;
   }
-  ul {
-    color: red;
-  }
 }
-
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 400px) {
+  code {
+  width: 90%;
+  font-size: 5px;
+  overflow-wrap: break-word;
+  }
   img {
     width: 100px;
     height: 100px;
   }
   li {
-    color: green;
+    width: 85%;
+    margin-left: -.25em;
+  }
+
+}
+@media only screen and (min-width: 400px) {
+  code {
+    width: 86%;
+    font-size: 6px;
+  }
+  img {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media only screen and (min-width: 450px) {
+  img {
+    width: 200px;
+    height: 200px;
+  }
+  li {
     margin-left: -2em;
+  }
+
+  code {
+    width: 95%;
+    font-size: 7px;
+  }
+}
+@media only screen and (min-width: 700px) {
+  code {
+    font-size: 10px;
+    width: 97%;
+  }
+  img {
+    height: 300px;
+    width: 300px;
   }
 }

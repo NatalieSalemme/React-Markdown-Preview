@@ -30,12 +30,12 @@ class App extends React.Component{
     return { __html: handleMarkup };
   }
   render() {
-
+const campIcon = <FontAwesomeIcon icon={faCampground} size="xs"/>
     return (
       <div className="App">
         <div className="editor-container">
           <header className="editor-header">
-        <span className=" camp-icon fa fa-free-code-camp"></span>
+        <span className=" camp-icon">{campIcon}</span>
         <h4 className="header-text">Editor</h4>
         </header>
           <textarea
@@ -47,7 +47,7 @@ class App extends React.Component{
 
         <div className="previewer-container">
           <header className="previewer-header">
-            <span className="camp-icon fa fa-free-code-camp"></span>
+            <span className="camp-icon">{campIcon}</span>
             <h4 className="header-text">Previewer</h4>
           </header>
           <div id="preview-container">
